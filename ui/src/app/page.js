@@ -40,6 +40,36 @@ export default function Home() {
         <div className={styles.productTitle}>Ürün Başlığı</div>
         <div className={styles.productPrice}>$300</div>
       </div>
+      <div className={styles.productContainer}>
+        <div className={styles.image}></div>
+        <div className={styles.productTitle}>Ürün Başlığı</div>
+        <div className={styles.productPrice}>$300</div>
+      </div>
+      <div className={styles.productContainer}>
+        <div className={styles.image}></div>
+        <div className={styles.productTitle}>Ürün Başlığı</div>
+        <div className={styles.productPrice}>$300</div>
+      </div>
+      <div className={styles.productContainer}>
+        <div className={styles.image}></div>
+        <div className={styles.productTitle}>Ürün Başlığı</div>
+        <div className={styles.productPrice}>$300</div>
+      </div>
+      <div className={styles.productContainer}>
+        <div className={styles.image}></div>
+        <div className={styles.productTitle}>Ürün Başlığı</div>
+        <div className={styles.productPrice}>$300</div>
+      </div>
+      <div className={styles.productContainer}>
+        <div className={styles.image}></div>
+        <div className={styles.productTitle}>Ürün Başlığı</div>
+        <div className={styles.productPrice}>$300</div>
+      </div>
+      <div className={styles.productContainer}>
+        <div className={styles.image}></div>
+        <div className={styles.productTitle}>Ürün Başlığı</div>
+        <div className={styles.productPrice}>$300</div>
+      </div>
       </section>
     </main>
   )
