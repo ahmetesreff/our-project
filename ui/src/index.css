@@ -21,6 +21,7 @@
 .logo {
   border-style: solid;
   border-color: black;
+  margin: 20px;
 }
 
 .productContainer {
@@ -44,6 +45,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   border-style: solid;
   border-color: black;
   min-height: 7vh;
@@ -56,4 +58,23 @@
 .image {
   min-width: 50px;
   min-height: 100px;
+}
+
+.basketItem {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-style: solid;
+  min-width: 70vw;
+  align-items: center;
+}
+
+.basketRemoveButton {
+  margin: 20px;
+  max-width: 100px;
+  max-height: 50px;
+}
+
+.basketButton {
+  margin: 20px;
 }
