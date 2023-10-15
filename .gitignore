@@ -1,2 +1,5 @@
 node_modules
 desktop.ini
+
+sqlite3.exe
+test.db
