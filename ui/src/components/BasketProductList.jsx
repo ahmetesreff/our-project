@@ -11,12 +11,10 @@ function BasketProductList() {
 
   function handleClick(event) {
     let itemToBeRemoved = event.target.id;
-
     const newArray = storageCart.filter(item => Number(item.id) !== Number(itemToBeRemoved));
-    console.log(JSON.stringify(newArray));
+    
     localStorage.setItem("shoppingCartJSON", JSON.stringify(newArray));
     setStorageCart(newArray);
-    console.log(localStorage.getItem("shoppingCartJSON"));
   }
 
   return (
