@@ -1,15 +1,23 @@
 import React from "react";
 import Product from "./Product";
-import products from "../service/productService";
+import product from "../service/productService";
 
-function createList(products) {
+function createList(product) {
   return (
-    <Product key={products.key} name={products.name} price={products.price} />
+    <Product
+      key={product.id}
+      productKey={product.id}
+      name={product.name}
+      price={product.price}
+      isFromBasketPage={false}
+    />
   );
 }
 
 function ProductList() {
-  return <>{products.map(createList)}</>;
+  return <>
+  {product.map(createList)}
+  </>;
 }
 
 export default ProductList;

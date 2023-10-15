@@ -58,7 +58,7 @@ const products = [
         name: "Samsung Galaxy",
         price: "4000",
         id: 12,
-    },
+    }
 ];
 
 export default products;

@@ -5,7 +5,7 @@ function Home() {
   return (
     <main className="main">
       <navigator className="navBar">
-        <div className="logo">LOGO</div>
+        <a href="/" className="logo">LOGO</a>
         OUR PROJECT
         <a href="/sepetim" className="basketButton">
           SEPET

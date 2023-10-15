@@ -2,15 +2,14 @@ import React from "react";
 import Product from "./Product";
 
 function BasketProduct(props) {
+
   return (
-    <div className="basketItem">
       <Product
-        key={props.key}
+        productKey={props.productKey}
         name={props.name}
         price={props.price}
+        isFromBasketPage={true}
       />
-      <button className="basketRemoveButton">Sepetten Çıkar</button>
-    </div>
   );
 }
 
