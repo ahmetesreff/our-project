@@ -4,22 +4,22 @@ import BasketProduct from "./BasketProduct";
 
 function BasketProductList() {
   let shoppingCartText = localStorage.getItem("shoppingCartJSON");
-  const shoppingCart = JSON.parse(shoppingCartText) ?? [];
-  const productsChosen = products.filter((product) => shoppingCart.includes(product.id));
+  const shoppingCartLocalStore = JSON.parse(shoppingCartText) ?? [];
+  const productsFetched = products.filter((product) => shoppingCartLocalStore.includes(product.id));
 
-  const [storageCart, setStorageCart] = useState(productsChosen);
+  const [shoppingCart, setShoppingCart] = useState(productsFetched);
 
   function handleClick(event) {
     let itemToBeRemoved = event.target.id;
-    const newArray = storageCart.filter(item => Number(item.id) !== Number(itemToBeRemoved));
+    const newShoppingCart = shoppingCart.filter(item => Number(item.id) !== Number(itemToBeRemoved));
     
-    localStorage.setItem("shoppingCartJSON", JSON.stringify(newArray));
-    setStorageCart(newArray);
+    localStorage.setItem("shoppingCartJSON", JSON.stringify(newShoppingCart.map((product) => product.id)));
+    setShoppingCart(newShoppingCart);
   }
 
   return (
     <>
-      {storageCart.map((product) => (
+      {shoppingCart.map((product) => (
         <div className="basketItem">
           <BasketProduct
             key={product.id}

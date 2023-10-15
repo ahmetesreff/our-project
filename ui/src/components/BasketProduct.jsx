@@ -5,7 +5,6 @@ function BasketProduct(props) {
 
   return (
       <Product
-        key={props.key}
         productKey={props.productKey}
         name={props.name}
         price={props.price}
