@@ -4,11 +4,11 @@ import BasketProductList from "../components/BasketProductList";
 function Basket() {
     return (
         <main className="main">
-            <navigator className="navBar">
+            <nav className="navBar">
                 <a href="/" className="logo">LOGO</a>
-                OUR PROJECT
+                <p>OUR PROJECT</p>
                 <a href="/sepetim" className="basketButton">SEPET</a>
-            </navigator>
+            </nav>
             <BasketProductList />
         </main>
     );
