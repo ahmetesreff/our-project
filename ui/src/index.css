@@ -1,3 +1,8 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.95em;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -6,8 +11,9 @@
 }
 
 .mainBody {
-  border-style: solid;
-  border-color: black;
+  border-style: double;
+  border-color: rgb(141, 141, 141);
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -19,35 +25,61 @@
 }
 
 .logo {
-  border-style: solid;
-  border-color: black;
   margin: 20px;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.logo:visited {
+  color: black;
 }
 
 .productContainer {
-  margin: 20px;
-  min-width: 130px;
-  border-style: solid;
-  border-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  min-width: 15%;
+  max-width: 15%;
+  border-style: double;
+  border-color: rgb(212, 212, 212);
+  
 }
 
 .productTitle {
-  border-style: solid;
+  border-style: hidden;
+  background-color: rgb(220,220,220);
+  margin: 3px;
   border-color: black;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .productPrice {
-  border-style: solid;
+
+  border-style: hidden;
+  background-color: rgb(150,150,150);
+  margin: 3px;
   border-color: black;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .navBar {
+  border-radius: 10px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  border-style: solid;
-  border-color: black;
+  border-style: hidden;
+  /* border-color: rgb(118, 118, 118); */
+  background-color: #bcbcbc;
   min-height: 7vh;
   min-width: 70vw;
   max-width: 90vw;
@@ -55,18 +87,36 @@
   margin-top: 5px;
 }
 
+.navBar p {
+  font-size: larger;
+}
+
 .image {
-  min-width: 50px;
-  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12vw;
+  height: 17vh;
+  margin-bottom: 3px;
+}
+
+.image img {
+  border: #6E6D70;
+  border-radius: 4px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .basketItem {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  border-style: solid;
+  border-style: double;
+  border-radius: 10px;
   min-width: 70vw;
   align-items: center;
+  margin: 5px;
+
 }
 
 .basketRemoveButton {
@@ -77,4 +127,20 @@
 
 .basketButton {
   margin: 20px;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.basketButton:visited {
+  color: black;
+}
+
+.productButton {
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  touch-action: manipulation;
+  margin-bottom: 3px;
 }
