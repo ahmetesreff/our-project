@@ -144,3 +144,11 @@ body {
   touch-action: manipulation;
   margin-bottom: 3px;
 }
+
+.productDetailContainer {
+  color: red;
+}
+
+.detailProduct {
+  color: red;
+}

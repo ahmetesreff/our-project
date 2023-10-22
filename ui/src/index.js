@@ -4,6 +4,7 @@ import './index.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from './pages/Home';
 import Basket from './pages/Basket';
+import ProductDetail from './pages/ProductDetail';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     path: "/sepetim",
     element: <Basket />,
   },
+  {
+    path: "/product/:productURL",
+    element:  <ProductDetail />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
