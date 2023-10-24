@@ -7,6 +7,7 @@ import AddToCartButton from "./AddToCartButton";
 
 function ProductList() {
 
+
   let shoppingCartText = localStorage.getItem("shoppingCartJSON");
   const shoppingCartLocalStore = JSON.parse(shoppingCartText) ?? [];
   const productsFetched = products.filter((product) => shoppingCartLocalStore.includes(product.id));
