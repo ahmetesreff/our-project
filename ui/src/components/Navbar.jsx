@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return <>
         <nav className="navBar">
-            <a href="/" className="logo">LOGO</a>
+            <Link to="/" className="logo">LOGO</Link>
             <p>OUR PROJECT</p>
-            <a href="/sepetim" className="basketButton">
+            <Link to="/sepetim" className="basketButton">
                 SEPET
-            </a>
+            </Link>
         </nav>
     </>
 }

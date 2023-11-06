@@ -2,43 +2,36 @@ import React, { useState } from "react";
 import Product from "./Product";
 import products from "../service/productService";
 import AddToCartButton from "./AddToCartButton";
+import { addToLocalStorage, getLocalStorageItems } from "../utils/localStorage";
 
 
 
 function ProductList() {
 
 
-  let shoppingCartText = localStorage.getItem("shoppingCartJSON");
-  const shoppingCartLocalStore = JSON.parse(shoppingCartText) ?? [];
+  
+  const shoppingCartLocalStore = getLocalStorageItems();
   const productsFetched = products.filter((product) => shoppingCartLocalStore.includes(product.id));
   const productsIdsFetched = productsFetched.map((product) => product.id)
 
   const [inCartButton, setInCartButton] = useState(productsIdsFetched);
 
   function handleClick(event) {
-    let shoppingCartText = localStorage.getItem("shoppingCartJSON");
-    const shoppingCart = JSON.parse(shoppingCartText) ?? [];
-    let currentItem = Number(event.target.id);
-
-    if (currentItem !== null && !shoppingCart.includes(currentItem)) {
-      shoppingCart.push(currentItem);
-      localStorage.setItem("shoppingCartJSON", JSON.stringify(shoppingCart));
-      setInCartButton(shoppingCart);
-    }
+    let itemId = Number(event.target.id);
+    addToLocalStorage(itemId, setInCartButton);
   }
 
   return (<>
 
     {products.map(product => (
-      <div className="productContainer">
+      <div key={product.id} className="productContainer">
         <Product
-          key={product.id}
           img={product.img}
           productKey={product.id}
           name={product.name}
           price={product.price}
         />
-        {Number(inCartButton.includes(product.id)) ? "Sepette" : <AddToCartButton id={product.id} handleClick={handleClick} />}
+        {Number(inCartButton.includes(product.id)) ? <div className="atCartButton">Sepette</div> : <AddToCartButton id={product.id} handleClick={handleClick} />}
       </div>)
     )}
   </>);

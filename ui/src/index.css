@@ -133,15 +133,13 @@ body {
 }
 
 .productButton {
-  padding: 6px 14px;
+  border: transparent;
+  width: fit-content;
+  background-color: #9b8274b8;
+  margin: 5px;
+  padding: 5px;
   border-radius: 6px;
-  background: #6e6d70;
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
-    inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
-    0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
-  color: #dfdedf;
-  touch-action: manipulation;
-  margin-bottom: 3px;
+  font-size: large;
 }
 
 .productDetailContainer {
@@ -184,7 +182,44 @@ body {
 
 .productDescription {
   display: flex;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
+.detailPageProduct {
+  display: flex;
+  border: solid;
+  flex-wrap: wrap;
+  width: 70vw;
+}
 
+.detailPageProductImage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+}
+
+.detailPageProductDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 5px;
+}
+
+.atCartButton {
+  background-color: green;
+  border: transparent;
+  width: fit-content;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: large;
+}
+
+.detailPageAddToCartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

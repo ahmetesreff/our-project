@@ -6,8 +6,6 @@ function BasketProduct(props) {
   return (
     <div className="productContainer">
       <Product
-
-        key={props.id}
         img={props.img}
         productKey={props.productKey}
         name={props.name}
