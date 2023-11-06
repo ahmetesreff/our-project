@@ -1,16 +1,11 @@
 import React from "react";
 import ProductList from "../components/ProductList";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
     <main className="main">
-      <nav className="navBar">
-        <a href="/" className="logo">LOGO</a>
-        <p>OUR PROJECT</p>
-        <a href="/sepetim" className="basketButton">
-          SEPET
-        </a>
-      </nav>
+      <Navbar />
       <section className="mainBody">
         <ProductList />
       </section>

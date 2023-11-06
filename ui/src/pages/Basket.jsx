@@ -1,14 +1,11 @@
 import React from "react";
 import BasketProductList from "../components/BasketProductList";
+import Navbar from "../components/Navbar";
 
 function Basket() {
     return (
         <main className="main">
-            <nav className="navBar">
-                <a href="/" className="logo">LOGO</a>
-                <p>OUR PROJECT</p>
-                <a href="/sepetim" className="basketButton">SEPET</a>
-            </nav>
+            <Navbar />
             <BasketProductList />
         </main>
     );

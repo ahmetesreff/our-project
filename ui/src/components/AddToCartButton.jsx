@@ -6,8 +6,7 @@ function AddToCartButton(props) {
         <button className="productButton"
             id={props.id}
             onClick={props.handleClick}
-            style={{ backgroundColor: "green" }}
-        >
+            >
             Sepete Ekle</button>
     );
 }
