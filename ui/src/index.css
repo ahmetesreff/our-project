@@ -223,3 +223,150 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Ekranın üzerinde sabit konumda olacak */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ekranın genişliği kadar */
+  height: 100%; /* Ekranın yüksekliği kadar */
+  background-color: rgb(0 0 0 / 19%); /* Arka plan rengi ve opaklık */
+  z-index: 9999; /* Görüntülenme önceliği */
+}
+
+.loginWrapper {
+  transform: scale(1.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Ekranın üzerinde sabit konumda olacak */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ekranın genişliği kadar */
+  height: 100%; /* Ekranın yüksekliği kadar */
+  background-color: rgb(0 0 0 / 19%); /* Arka plan rengi ve opaklık */
+  z-index: 9999; /* Görüntülenme önceliği */
+}
+
+.registerWrapper {
+  transform: scale(1.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerPageInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.loginPageInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.registerPageInput h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27527f; /* Metin rengi */
+  margin: 10px 0; /* Boşluklar */
+}
+
+.loginPageInput h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27527f; /* Metin rengi */
+  margin: 10px 0; /* Boşluklar */
+}
+
+.registerPageInputInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s;
+}
+
+.loginPageInputInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s;
+}
+
+.registerPageRegisterButton button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff; /* Düğme rengi (örnek: mavi) */
+  color: #fff; /* Metin rengi (örnek: beyaz) */
+  border: none; /* Kenar çizgisi yok */
+  border-radius: 5px; /* Kenar köşelerini yuvarlar */
+  font-size: 16px;
+  cursor: pointer; /* Fare işareti el işareti olur */
+  transition: background-color 0.2s; /* Arka plan rengi değişim efekti */
+}
+
+.loginPageLoginButton button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff; /* Düğme rengi (örnek: mavi) */
+  color: #fff; /* Metin rengi (örnek: beyaz) */
+  border: none; /* Kenar çizgisi yok */
+  border-radius: 5px; /* Kenar köşelerini yuvarlar */
+  font-size: 16px;
+  cursor: pointer; /* Fare işareti el işareti olur */
+  transition: background-color 0.2s;
+}
+
+/* Düğmeye fare hover (üzerine gelme) efekti */
+.registerPageRegisterButton button:hover {
+  background-color: #0056b3; /* Hover rengi (örnek: daha koyu mavi) */
+}
+
+.loginPageLoginButton button:hover {
+  background-color: #0056b3;
+}
+
+.registerPageHaveAccount {
+  color: #27527f;
+}
+
+.loginPageHaveAccount {
+  color: #27527f;
+}
+
+.registerPageHaveAccount:visited {
+  color: #27527f;
+}
+
+.loginPageHaveAccount:visited {
+  color: #27527f;
+}
+
+.registerWrapper h1 {
+  color: #1a3f65;
+}
+
+.loginWrapper h1 {
+  color: #1a3f65;
+}
